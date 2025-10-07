@@ -9,10 +9,11 @@ import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
 public class GreetingController {
+
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
 
-    // http://localhost:8080/greeting?name=Otávio
+    // http://localhost:8080/greeting?name=Leandro
     @RequestMapping("/greeting")
     public Greeting greeting(
             @RequestParam(value = "name", defaultValue = "Word")
