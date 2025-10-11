@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: erudio-spring-boot
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/erudio-spring-boot?useTimezone=true&serverTimezone=UTC
+    username: erudio-spring-boot
+    password: erudio-spring-boot
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+    show-sql: false
+    open-in-view: false
+logging:
+  level:
+    com.otaviorossoni: DEBUG
